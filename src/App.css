@@ -1,0 +1,99 @@
+@import '~antd/dist/antd.css';
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 200s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.line {
+  position: relative;
+  width: 0px;
+  margin: auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+/*Animação*/
+.anim-typewriter {
+  animation: typewriter 8s steps(9) 500ms infinite forwards,
+  blinkTextCursor 500ms steps(15) infinite normal;
+   
+  /* animation-iteration-count: 3; */
+}
+@keyframes typewriter {
+  0% {
+     width: 0px;
+  }
+  5% {
+    width: 130px;
+  }
+  10% {
+        width: 125px;
+  }
+  15% {
+    width: 125px;
+  }
+  20% {
+    width: 125px;
+  }
+  25% {
+     width: 125px;
+  }
+  30% {
+    width: 125px;
+  }
+  75% {
+        width: 125px;
+  }
+  80% {
+    width: 125px;
+    animation-duration: 10s
+  }
+  90% {
+        width: 0px;
+  }
+  95% {
+    width: 0px;
+}
+  100% {
+        width: 0px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+        border-right-color: transparent;
+  }
+}
